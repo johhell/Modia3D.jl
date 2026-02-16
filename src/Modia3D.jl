@@ -4,8 +4,8 @@
 module Modia3D
 
 const path = dirname(dirname(@__FILE__))   # Absolute path of package directory
-const Version = "0.12.3"
-const Date = "2026-02-13"
+const Version = "0.12.4"
+const Date = "2026-02-16"
 
 println("\nImporting Modia3D Version $Version ($Date)")
 

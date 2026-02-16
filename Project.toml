@@ -1,10 +1,10 @@
 authors = ["Andrea Neumayr <andrea.neumayr@dlr.de>", "Martin Otter <Martin.Otter@dlr.de>", "Gerhard Hippmann <gerhard.hippmann@dlr.de>"]
 name = "Modia3D"
 uuid = "07f2c1e0-90b0-56cf-bda7-b44b56e34eed"
-version = "0.12.3"
+version = "0.12.4"
 
 [compat]
-Colors = "0.12, 0.11, 0.10"
+Colors = "0.12"
 DataFrames = "1"
 DoubleFloats = "1"
 FileIO = "1"
@@ -20,7 +20,7 @@ StaticArrays = "1"
 TimerOutputs = "0.5"
 Unitful = "1"
 URIParser = "0.4"
-julia = "1.7"
+julia = "1.10"
 
 [deps]
 Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
@@ -47,4 +47,8 @@ URIParser = "30578b45-9adc-5946-b283-645ec420af67"
 UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
 
 [extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 CPUSummary = "2a0fbf3d-bb9c-48f3-b0a9-814d99fd7ab9"
+
+[targets]
+test = ["Test", "CPUSummary"]
